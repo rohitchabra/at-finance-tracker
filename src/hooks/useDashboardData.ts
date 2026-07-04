@@ -66,9 +66,11 @@ export function useDashboardData() {
         setWednesdayActivity(data.wednesdayActivity);
         setThursdayActivity(data.thursdayActivity);
         setFridayActivity(data.fridayActivity);
-      } catch {
+      } catch (err) {
         if (!cancelled) {
-          setError("Failed to load dashboard data.");
+          const message =
+            err instanceof Error ? err.message : "Failed to load dashboard data.";
+          setError(message);
         }
       } finally {
         if (!cancelled) {
