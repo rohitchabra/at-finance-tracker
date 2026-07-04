@@ -7,14 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "supabase": "supabase",
-    "supabase:start": "supabase start",
-    "supabase:stop": "supabase stop",
-    "supabase:status": "supabase status",
-    "supabase:reset": "supabase db reset",
-    "supabase:link": "supabase link --project-ref hvvtooervvfolnumxjuy",
-    "supabase:pull": "supabase db pull",
-    "supabase:push": "supabase db push --linked --include-seed --yes"
+    "supabase": "npx supabase",
+    "supabase:start": "npx supabase start",
+    "supabase:stop": "npx supabase stop",
+    "supabase:status": "npx supabase status",
+    "supabase:reset": "npx supabase db reset",
+    "supabase:link": "npx supabase link --project-ref hvvtooervvfolnumxjuy",
+    "supabase:pull": "npx supabase db pull",
+    "supabase:push": "npx supabase db push --linked --include-seed --yes"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.110.0",
