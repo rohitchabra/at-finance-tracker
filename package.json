@@ -6,9 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "supabase": "supabase",
+    "supabase:start": "supabase start",
+    "supabase:stop": "supabase stop",
+    "supabase:status": "supabase status",
+    "supabase:reset": "supabase db reset",
+    "supabase:link": "supabase link --project-ref hvvtooervvfolnumxjuy",
+    "supabase:pull": "supabase db pull",
+    "supabase:push": "supabase db push --linked --include-seed --yes"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.110.0",
+    "lucide-react": "^1.23.0",
     "next": "16.2.10",
     "react": "19.2.4",
     "react-dom": "19.2.4"
