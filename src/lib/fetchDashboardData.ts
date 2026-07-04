@@ -1,4 +1,4 @@
-import { supabase } from "@/lib/supabase/client";
+import { getSupabase } from "@/lib/supabase/client";
 import type { Activity, DashboardMetrics, Status, WeeklyViewMode } from "@/types/dashboard";
 
 type DashboardSummaryRow = {
@@ -48,6 +48,7 @@ function getSlotRow(slots: DashboardSlotRow[], slotKey: string): DashboardSlotRo
 }
 
 export async function fetchDashboardData(): Promise<DashboardMetrics> {
+  const supabase = getSupabase();
   const [summaryResult, slotsResult] = await Promise.all([
     supabase.from("dashboard_summary_view").select("*").single(),
     supabase.from("dashboard_slot_view").select("*"),
