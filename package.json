@@ -12,7 +12,7 @@
     "supabase:stop": "npx supabase stop",
     "supabase:status": "npx supabase status",
     "supabase:reset": "npx supabase db reset",
-    "supabase:link": "npx supabase link --project-ref hvvtooervvfolnumxjuy",
+    "supabase:link": "npx supabase link --project-ref wjtzlmrfilacydkqywgj",
     "supabase:pull": "npx supabase db pull",
     "supabase:push": "npx supabase db push --linked --include-seed --yes"
   },
